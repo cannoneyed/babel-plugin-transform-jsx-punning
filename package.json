@@ -1,0 +1,39 @@
+{
+  "name": "babel-plugin-jsx-punning",
+  "version": "1.0.0",
+  "description": "Transforms value-omitted boolean jsx props into punned props with a corresponding value",
+  "repository": "https://github.com/cannoneyed/babel-plugin-jsx-punning",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "keywords": [
+    "babel",
+    "plugin",
+    "babel-plugin"
+  ],
+  "scripts": {
+    "clean": "rm -rf lib",
+    "build": "babel src -d lib",
+    "example": "npm run build && babel example/input.js -o example/output.js",
+    "test": "jest",
+    "test:watch": "npm run test -- --watch",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "dependencies": {
+    "@babel/helper-plugin-utils": "^7.0.0-beta.52",
+    "@babel/plugin-syntax-jsx": "^7.0.0-beta.52",
+    "babel-plugin-syntax-jsx": "^6.18.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.2.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "jest": "^23.3.0",
+    "regenerator-runtime": "^0.12.0"
+  },
+  "jest": {
+    "testRegex": "tests/.*\\.(js|jsx)$"
+  }
+}

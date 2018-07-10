@@ -2,6 +2,8 @@
 
 > Transforms value-omitted boolean jsx props into punned props with a corresponding value, ala ReasonML.
 
+Sadly, this doesn't play well with typescript yet...
+
 ```javascript
 <Component someAttribute />
 

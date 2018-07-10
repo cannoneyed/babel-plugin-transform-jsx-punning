@@ -1,8 +1,8 @@
 {
-  "name": "babel-plugin-jsx-punning",
+  "name": "babel-plugin-transform-jsx-punning",
   "version": "1.0.0",
   "description": "Transforms value-omitted boolean jsx props into punned props with a corresponding value",
-  "repository": "https://github.com/cannoneyed/babel-plugin-jsx-punning",
+  "repository": "https://github.com/cannoneyed/babel-plugin-transform-jsx-punning",
   "license": "MIT",
   "main": "lib/index.js",
   "keywords": [
